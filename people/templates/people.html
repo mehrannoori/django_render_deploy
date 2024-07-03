@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <title>People List</title>
+</head>
+<body>
+    {% for people in people_list %}
+    <p>
+        <span style="color: blue;">{{ people.firstname }}</span>| 
+        <span style="color: red;">{{ people.lastname }}</span>| 
+        <span style="color: green;">{{ people.age }}</span>
+    </p>
+    {% endfor %}
+</body>
